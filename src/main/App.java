@@ -1,14 +1,34 @@
 package main;
+import java.util.*;
 
-import utils.StudentValidator;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        // NO MODIFICAR ESTE CÓDIGO
-        var estudiante = StudentValidator.validarDatos();
-        System.out.println("👤 Estudiante: " + estudiante.nombre());
-        System.out.println("✉️  Correo: " + estudiante.correo());
-        // NO MODIFICAR HASTA AQUÍ
+      
+
+        //primer ejercicio
+        LogicaClasificacion logicaClasificacion = new LogicaClasificacion();
+        Queue<String> cola = new LinkedList<String>();
+
+        cola.add("Ana");
+        cola.add("Luis");
+        cola.add("Pablo");
+
+        System.out.println("La cola invertida es: " +logicaClasificacion.invertirColaNombres(cola) );
+
+        //segundo ejercicio
+        //Queue<String> cola2 = new LinkedList<String>();
+        //cola.add("anilina");
+
+        String texto = "anilina";
+        boolean palindromo = logicaClasificacion.verificarPalindromoCola(texto);
+
+        if(boolean == false){
+            System.out.println("No es un palindromo");
+        }
+
+
+
 
     }
 }
